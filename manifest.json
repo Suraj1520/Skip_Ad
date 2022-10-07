@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Skip ad",
+    "description": "Skip the youtube ad directly",
+    "version": "1.0",
+
+    "icons":{
+        "98": "image/th2.jpg"
+    },
+    "action":{
+        "default_icon":{
+            "98":"image/th2.jpg"
+        },
+        "default_title":"YouTube AutoSkip"
+    },
+    
+    "content_scripts":[{
+        "matches":["https://www.youtube.com/*"],
+        "css":["main.css"],
+        "js":["content.js"]
+    }]
+    
+}
